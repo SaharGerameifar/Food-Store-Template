@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <!--start loader  -->
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--end loader  -->
+    <div class="bodysection container">
+        <!--start navbar element  -->
+        <div class="row">
+            <div class="col-12">
+               
+                <nav>
+                    <h1 class="logo">
+                        <a  href="#">روشا</a>
+                    </h1>
+                    <input type="checkbox" id="hambergur-toggle" />
+                    <label for="hambergur-toggle" class="hambergur">
+                        <span class="bar"></span>
+                    </label>
+                    <ul class="nav-list">
+                        <li><a href="#">خانه</a></li>
+                        <li class="dropdown">
+                            <a  href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                منو<i class="fa fa-angle-down px-2"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">پيش غذا</a>
+                                <a class="dropdown-item" href="#"> كباب</a>
+                                <a class="dropdown-item" href="#"> دسر </a>
+                                <a class="dropdown-item" href="#"> نوشيدني</a>
+                            </div>
+                        </li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+
+                    </ul>
+                </nav>
+                <div>
+                    <a href="cart.html">
+                        <img src="img/basket.png" alt="" class="icon-basket img-fluid float-left">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--end navbar element  -->
+        <!--main content-->
+        <div id="background"></div>
+        <div class="main-content">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="col-12 col-md-8 alta ">
+                    <img src="img/2.png" id="alta" alt="" class="img-fluid ">
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h1 id="title">خوشمزه و سريع</span></h1>
+                <div>
+                    <div class="selectbutton rosegold" id="rosegold" onclick="rosegoldColor()"></div>
+                    <div class="selectbutton coral" id="coral" onclick="coralColor()"></div>
+                    <div class="selectbutton fuschia" id="fuschia" onclick="fuschiaColor()"></div>
+                    <div class="selectbutton black" id="black" onclick="blackColor()"></div>
+                </div>
+            </div>
+        </div>
+        <!--end main content-->
+    </div>
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="js/main.js"></script>
+    <script>
+        let alta = document.getElementById("alta");
+        let background = document.getElementById("background");
+        let title = document.getElementById("title");
+
+        function rosegoldColor() {
+            alta.src = "img/1.png";
+            background.style.backgroundColor = "#FE724C";
+            title.style.color = "#FE724C";
+        }
+
+        function coralColor() {
+            alta.src = "img/2.png";
+            background.style.backgroundColor = "#FFC529";
+            title.style.color = "#FFC529";
+        }
+
+        function fuschiaColor() {
+            alta.src = "img/3.png";
+            background.style.backgroundColor = "#D7D7D7";
+            title.style.color = "#D7D7D7";
+        }
+
+        function blackColor() {
+            alta.src = "img/4.png";
+            background.style.backgroundColor = "#28a745";
+            title.style.color = "#28a745";
+        }
+    </script>
+</body>
+
+</html>

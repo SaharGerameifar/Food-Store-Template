@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/foodstyle.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <!--start loader  -->
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--end loader  -->
+    <div class="container">
+        <!--start navbar element  -->
+        <div class="row pt-5">
+            <div class="col-12">
+                <nav>
+                    <h1 class="logo">
+                        <a href="#">روشا</a>
+                    </h1>
+                    <input type="checkbox" id="hambergur-toggle" />
+                    <label for="hambergur-toggle" class="hambergur">
+                        <span class="bar"></span>
+                    </label>
+                    <ul class="nav-list">
+                        <li><a href="#">خانه</a></li>
+                        <li class="dropdown">
+                            <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                منو<i class="fa fa-angle-down px-2"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">پيش غذا</a>
+                                <a class="dropdown-item" href="#"> كباب</a>
+                                <a class="dropdown-item" href="#"> دسر </a>
+                                <a class="dropdown-item" href="#"> نوشيدني</a>
+                            </div>
+                        </li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+
+                    </ul>
+                </nav>
+                <div>
+                    <a href="cart.html">
+                        <img src="img/basket.png" alt="" class="icon-basket img-fluid float-left">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--end navbar element  -->
+        
+        <section id="cart_items" class="pb-0">
+            <div class="container productcontainer">
+                <h3 class="py-3 title-table">سفارش شما</h3>
+                <div class="table-responsive cart_info">
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr class="cart_menu">
+                                <td ></td>
+                                <td class="description">محصول</td>
+                                <td class="total">مجمـوع</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cart_item_number">1</td>
+                                <td class="cart_description">
+                                    <h4 class="text-center"><a href="">کالای شمـاره 1</a></h4>
+                                    <p class="text-center">شناسـه : 01010101</p>
+                                </td>
+                                <td class="cart_total">
+                                    <p class="text-center cart_total_price">590.000 ريال</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cart_item_number">2</td>
+                                <td class="cart_description">
+                                    <h4 class="text-center"><a href="">کالای شمـاره 2</a></h4>
+                                    <p class="text-center">شناسـه : 01010101</p>
+                                </td>
+                                <td class="cart_total">
+                                    <p class="text-center cart_total_price">590.000 ريال</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cart_item_number">3</td>
+                                <td class="cart_description">
+                                    <h4 class="text-center"><a href="">کالای شمـاره 3</a></h4>
+                                    <p class="text-center">شناسـه : 01010101</p>
+                                </td>
+                                <td class="cart_total">
+                                    <p class="text-center cart_total_price">590.000 ريال</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="cart_description">
+                                    <p class="text-center">مجموع سبد خريد</p>
+                                </td>
+                                <td class="cart_total">
+                                    <p class="text-center cart_total_price">590.000 ريال</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="cart_description">
+                                    <p class="text-center"> هزينه ارسال </p>
+                                </td>
+                                <td class="cart_total">
+                                    <p class="text-center cart_total_price">رايگان</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="cart_description">
+                                    <p  class="text-center">مجموع سفارش </p>
+                                </td>
+                                <td class="cart_total">
+                                    <p class="text-center cart_total_price">590.000 ريال</p>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="do_action" class="pt-0">
+            <div class="container do_action">
+
+                <form action="#" class="mt-3 mr-3">
+                    <table class="form-checkout">
+                        <tr>
+                            <td> <label for="fname" class="form-control-lable ml-3"> نام</label></td>
+                            <td>
+                                <input type="text"  class="form-control" id="fname" placeholder="لطفا نام خود را وارد كنيد">
+                                  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname" class="form-control-lable ml-3"> نام خانوادگي</label></td>
+                            <td> 
+                                <input type="text"  class="form-control " id="lname" placeholder="لطفا نام خانوادگي خود را وارد كنيد">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="#mail" class="form-control-lable ml-3"> ايميل</label></td>
+                            <td>
+                                <input type="email"  class="form-control " name="mail" placeholder="لطفا ايميل خود را وارد كنيد">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="#phone" class="form-control-lable ml-3"> شماره تماس</label></td>
+                            <td>
+                                <input type="number"  class="form-control " name="phone" placeholder="لطفا شماره تماس خود را وارد كنيد">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="#postcode" class="form-control-lable ml-3"> كد پستي</label></td>
+                            <td>
+                                <input type="number"  class="form-control " name="postcode" placeholder="لطفا كد پستي خود را وارد كنيد">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="#address" class="form-control-lable ml-3"> آدرس</label></td>
+                            <td>
+                                <textarea class="form-control " name="" id="" cols="30" rows="3" name="address" placeholder="لطفا آدرس خود را وارد كنيد"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="payment my-5 text-center" >
+                                    <a href="to_bank.html"><img src="img/User_perspective_matte.png" alt="" class="img-fluid icon-add"> ثبت اطلاعات</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="footer ">
+        <div class="container">
+            <div class="social-network">
+                <a href="#" class="footer-icon"><img src="img/Instagram_perspective_matte.png" alt=""
+                        class="img-fluid icon-social"></a>
+                <a href="#" class="footer-icon"><img src="img/Telegram_perspective_matte.png" alt=""
+                        class="img-fluid icon-social"></a>
+                <a href="#" class="footer-icon "><img src="img/WhatsApp_perspective_matte.png" alt=""
+                        class="img-fluid icon-social"></a>
+                <a href="#" class="footer-icon"><img src="img/Twitter_perspective_matte.png" alt=""
+                        class="img-fluid icon-social"></a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-privacy">تمام حقوق این وب سایت متعلق به روشا فود است| <a href="#"
+                    class="footer-privacy-link ">طراحی شده توسط: </a> </p>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
